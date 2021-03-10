@@ -5,6 +5,7 @@ def linear_search(lst, val):
     return -1
 
 def binary_search_iterative(lst, val, key):
+    # while loop
     left, right = 0, len(lst) - 1
 
     while left <= right:
@@ -24,6 +25,7 @@ def binary_search_iterative(lst, val, key):
 def binary_search_recursive(lst, val):
     #log n
     # if left < right, check if its the middle, if not, try with half the list
+    #recursion
     left, right = 0, len(lst) - 1
 
     if left <= right:
